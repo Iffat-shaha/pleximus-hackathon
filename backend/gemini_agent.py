@@ -23,7 +23,7 @@ tools = [
 ]
 
 
-# Create a chat with the tools
+# Create the Gemini chat
 chat = client.chats.create(
     model="gemini-3.6-flash",
     config={
@@ -32,13 +32,11 @@ chat = client.chats.create(
 )
 
 
-while True:
-
-    user_input = input("\nYou: ")
-
-    if user_input.lower() == "exit":
-        break
+def ask_gemini(user_input):
+    """
+    Send a user message to Gemini and return the response.
+    """
 
     response = chat.send_message(user_input)
 
-    print("Agent:", response.text)
+    return response.text

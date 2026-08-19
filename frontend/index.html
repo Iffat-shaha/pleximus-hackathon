@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>🤖 Gemini AI Agent</h1>
+                <p>AI assistant with tool calling</p>
+            </div>
+
+            <button id="clearBtn" class="clear-btn">
+                Clear
+            </button>
+        </header>
+
+        <!-- Chat Area -->
+        <main id="chatBox" class="chat-box">
+
+            <!-- Initial AI message -->
+            <div class="message ai-message">
+                <div class="avatar">🤖</div>
+
+                <div class="message-content">
+                    <div class="sender">Gemini</div>
+                    <div class="bubble">
+                        Hello! 👋 I'm your Gemini AI Agent.
+                        <br><br>
+                        I can use tools such as Calculator, Weather,
+                        Wikipedia and Text Utility.
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Input Area -->
+        <footer class="input-area">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask Gemini something..."
+                autocomplete="off"
+            >
+
+            <button id="sendBtn">
+                Send ➤
+            </button>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
